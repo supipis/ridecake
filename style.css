@@ -1,0 +1,141 @@
+/* Vars */
+:root{
+	--cake_grey: #768692;
+	--cake_light_grey: #8d9ca7;
+	--cake_yellow: #ffc700;
+	}
+	
+	
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+	html, body{
+		font-family: 'Source Sans Pro', sans-serif;
+		color: white;
+	}
+	
+	.hero {
+	background-image: url('https://ridecake.com/en/wp-content/uploads/2021/09/Image-from-iOS-min-scaled.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+	padding: 0px 0px 175px 0px;
+	background-clip: content-box;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 12em;
+	}
+	
+	.hero__title{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		margin-bottom: 4em;
+	}
+	
+	.page-middle{
+		background-color: var(--cake_grey);
+		margin-top: -175px;
+		display: grid;
+		    grid-template-columns: 1fr 1fr;
+	}
+	
+	.page-middle__description{
+		padding: 3em;
+		width: 85%;
+	}
+	
+	h2{
+		margin-bottom: 1em;
+	}
+	
+	img{
+		max-width: 100%;
+		
+	}
+	
+	.bike__content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.content{
+		background-color: var(--cake_light_grey);
+		padding: 12em 5em;
+	}
+	
+	h3{
+		padding-bottom: .5em;
+	}
+	
+	p{
+		font-size: 15px;
+	}
+	
+	
+	
+	@media only screen and (max-width: 767px){
+		.page-middle{
+			display: block;
+		}
+		.page-middle__none{
+			display:none;
+		}
+		.page-middle__description {
+			padding: 2em;
+		}
+		.bike__content{
+			display: block;
+		}
+		.content{
+			padding: 6em 1.6em;
+		}
+		.content__description{
+			width:86%;
+		}
+		.hero{
+			grid-column-gap: 6em;
+		}
+		h1{
+			font-size: 1.2em;
+		}
+		
+	}
+	
+	@media only screen and (max-width: 1023px) and (min-width:768px){
+		.page-middle{
+			display: block;
+		}
+		.page-middle__none{
+			display: none;
+		}
+		.page-middle__description {
+			padding: 6em;
+		}
+		.bike__content{
+			display: block;
+		}
+		.content__description{
+			width:79%
+		}
+	}
+	
+	@media only screen and (max-width: 1366px) and (min-width:1024px){
+		
+		.page-middle{
+			margin-top: -200px;
+		}
+		.page-middle__description {
+			padding: 4em;
+			width: 100%;
+		}
+		.content{
+			padding: 8em 5em;
+		}
+	}
+	
+	
